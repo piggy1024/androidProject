@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.homework1">
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="piggyNewsAPP"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 跳转页面 -->
+        <activity
+            android:name=".JumpActivity"
+            android:label="菜单栏">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_JUMP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 个人中心 -->
+        <activity
+            android:name=".Person_info"
+            android:label="个人中心">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_PERSONINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 所有新闻列表 -->
+        <activity
+            android:name=".AllNewsList"
+            android:label="所有新闻列表">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_ALLNEWS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 收藏新闻列表 -->
+        <activity
+            android:name=".FavorNewsList"
+            android:label="收藏新闻列表">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_FAVORNEWS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 添加新闻 -->
+        <activity
+            android:name=".AddNews"
+            android:label="添加新闻">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_ADDNEWS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewsDetail" android:label="新闻详情">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_NEWSDETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

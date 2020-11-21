@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="NewsAPP" ></dbname>
+    <!--更改数据库的表版本值需要+1-->
+    <version value="2"></version>
+    <list>
+        <mapping class="com.example.homework1.News"></mapping>
+        <!--<mapping class="com.example.litepaltest.Category"></mapping>-->
+    </list>
+</litepal>

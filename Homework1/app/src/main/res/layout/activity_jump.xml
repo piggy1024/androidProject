@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_jump"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:text="Weclome!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        />
+    <Button
+        android:id="@+id/person_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人中心"/>
+    <Button
+        android:id="@+id/all_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="所有新闻列表"/>
+    <Button
+        android:id="@+id/favor_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收藏新闻列表"/>
+    <Button
+        android:id="@+id/add_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加新闻"/>
+    <!--<Button-->
+        <!--android:id="@+id/create_database"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="创建数据库"/>-->
+
+</LinearLayout>

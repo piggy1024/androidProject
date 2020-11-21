@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_add_news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.homework1.AddNews">
+    <!-- 新闻标题-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻标题"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:hint="请输入要添加的新闻标题"/>
+    <!-- 新闻作者 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作者"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/news_author"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:hint="请输入作者"/>
+    <!-- 新闻正文 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正文"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/news_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:hint="请输入新闻内容"/>
+    <!-- 新闻图片名称 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻图片名称"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/news_picName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:hint="请输入新闻图片名称"/>
+    <!-- 确认添加按钮 -->
+    <Button
+        android:id="@+id/add_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="确认添加"/>
+</LinearLayout>
